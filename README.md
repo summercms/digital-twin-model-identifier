@@ -9,7 +9,7 @@
 [URI compatibility](#URI-compatibility)<br>
 
 ## Introduction
-Beginning with DTDL v2, the format of identifiers used in Digital Twin models will change from Universal Resource Name (URN) to a new format called Digital Twin Modeling Identifier (DTMI).  This document describes the DTMI syntax, provides reference implementations of validators for the new syntax using regular expressions and C code, formally defines the identifier syntax, and demonstrates that it specializes the URI grammar.
+This document describes the syntax of the Digital Twin Modeling Identifier (DTMI), provides reference implementations of validators for the syntax using regular expressions and C code, formally defines the identifier syntax, and demonstrates that it specializes the URI grammar.
 
 ## DTMI syntax
 A DTMI has three components: scheme, path, and version.  Scheme and path are separated by a colon; path and version are separated by a semicolon:
