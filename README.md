@@ -51,13 +51,13 @@ This practice will not eliminate the possibility of collisions, but it will limi
 The following regular expression can be used to assess whether a string satisfies the DTMI syntax for user-generated identifiers:
 
 ```
-^dtmi:[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?)*;[1-9]{0,8}[0-9]$
+^dtmi:[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::[A-Za-z](?:[A-Za-z0-9_]*[A-Za-z0-9])?)*;[1-9][0-9]{0,8}$
 ```
 
 The following regular expression can be used to assess whether a string satisfies the full DTMI syntax, including both user-generated and system-generated identifiers:
 
 ```
-^dtmi:(?:_+[A-Za-z0-9]|[A-Za-z])(?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::(?:_+[A-Za-z0-9]|[A-Za-z])(?:[A-Za-z0-9_]*[A-Za-z0-9])?)*;[1-9]{0,8}[0-9]$
+^dtmi:(?:_+[A-Za-z0-9]|[A-Za-z])(?:[A-Za-z0-9_]*[A-Za-z0-9])?(?::(?:_+[A-Za-z0-9]|[A-Za-z])(?:[A-Za-z0-9_]*[A-Za-z0-9])?)*;[1-9][0-9]{0,8}$
 ```
 
 ## Validation code in C
